@@ -62,5 +62,15 @@ public class Lesson35TwoDArrays {
 		/* In this case, if the number is not found then it will
 		print a negative number, the number that it prints is determined
 		by the formula -(index of where it would go)-1 */
+
+		// QUESTION 10:
+		/* For each of the positions in the 2d array, it will calculate the product of the row and column index of those positions. I added the print statements to show what the array looks like after */
+		for (int row = 0; row < a.length; row++) {
+			for (int col = 0; col < a[row].length; col++) {
+				a[row][col] = row * col;
+				System.out.print(a[row][col] + "\t");
+			}
+			System.out.println("");
+		}
 	}
 }
